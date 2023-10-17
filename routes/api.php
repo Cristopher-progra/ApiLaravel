@@ -21,6 +21,7 @@ Route::put('/estudiante/update/{id}', [EstudianteController::class, 'updateStude
 Route::post('/estudiante/store', [EstudianteController::class, 'storeStudent']);
 Route::get('/estudiante/select', [EstudianteController::class, 'selectStudent']);
 
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
